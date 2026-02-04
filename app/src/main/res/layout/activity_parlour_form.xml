@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beatisean.ParlourForm.ParlourFormActivity">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <ImageView
+         android:layout_marginBottom="16dp"
+         android:id="@+id/logoImage"
+         android:layout_marginTop="32dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_width="100dp"
+         android:src="@drawable/splash"
+         android:layout_height="75dp">
+     </ImageView>
+
+     <LinearLayout
+         android:id="@+id/WelcomeLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:gravity="center_horizontal"
+         android:orientation="vertical"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/logoImage"
+         app:layout_constraintVertical_bias="0.0">
+
+         <TextView
+             android:id="@+id/WelcomeText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Welcome to Lexe"
+             android:textSize="24sp"
+             android:textStyle="bold"></TextView>
+
+         <TextView
+             android:id="@+id/WelcomeTextDetails_1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:text="Please create acount to grow your buissiness "
+             android:textSize="14sp"></TextView>
+
+         <TextView
+             android:id="@+id/WelcomeTextDetails_2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="and manage it easily?"
+             android:textSize="14sp" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_marginLeft="24dp"
+         android:layout_marginRight="24dp"
+         android:orientation="vertical"
+         android:layout_marginTop="24dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/WelcomeLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+         <TextView
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/WelcomeLayout"
+             android:textSize="16sp"
+             android:textStyle="bold"
+             android:id="@+id/parlourDetailsText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Parlour Details "
+             />
+
+
+         <EditText
+             android:id="@+id/parlourName"
+             android:layout_marginTop="12dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Parlour name">
+         </EditText>
+
+         <EditText
+             android:id="@+id/parlourAddress"
+             android:layout_marginTop="14dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Parlour address">
+         </EditText>
+
+         <EditText
+             android:id="@+id/MobileNumber"
+             android:layout_marginTop="14dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Mobile number">
+         </EditText>
+
+         <EditText
+             android:id="@+id/EmailAddress"
+             android:layout_marginTop="14dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="EmailAddress">
+         </EditText>
+
+
+         <EditText
+             android:id="@+id/Details"
+             android:layout_marginTop="6dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Description">
+         </EditText>
+
+
+         <ImageView
+             android:layout_marginTop="16dp"
+             android:src="@color/cardview_dark_background"
+             android:id="@+id/googleMape"
+             android:layout_width="match_parent"
+             android:layout_height="200dp">
+         </ImageView>
+
+         <TextView
+             android:layout_marginTop="16dp"
+             android:text="Enter Services you offer"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+         </TextView>
+
+         <TextView
+             android:layout_marginTop="16dp"
+             android:text="Opening Time"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+         </TextView>
+
+         <EditText
+             android:id="@+id/OpeningTime"
+             android:layout_marginTop="6dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="10 am">
+         </EditText>
+
+         <TextView
+             android:layout_marginTop="16dp"
+             android:text="Closing Time"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+         </TextView>
+
+         <EditText
+             android:id="@+id/ClosingTime"
+             android:layout_marginTop="6dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="12 pm">
+         </EditText>
+
+         <TextView
+             android:layout_marginTop="16dp"
+             android:text="Off Days"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+         </TextView>
+
+         <EditText
+             android:id="@+id/OffDayDetails"
+             android:layout_marginTop="6dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Sunday">
+         </EditText>
+
+         <TextView
+             android:layout_marginTop="16dp"
+             android:text="Seats/ Ca[acity"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+         </TextView>
+
+         <EditText
+             android:id="@+id/seatsOrCapacityDetails"
+             android:layout_marginTop="6dp"
+             android:inputType="number"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Sunday">
+         </EditText>
+
+         <TextView
+             android:layout_marginTop="16dp"
+             android:text="PortFolio"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+         </TextView>
+
+         <ImageView
+             android:layout_marginTop="16dp"
+             android:src="@color/cardview_dark_background"
+             android:id="@+id/portFolioImage"
+             android:layout_width="match_parent"
+             android:layout_height="200dp">
+         </ImageView>
+
+         <Button
+             android:layout_marginBottom="12dp"
+             android:layout_marginTop="24dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Register Parlour">
+         </Button>
+
+     </LinearLayout>
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

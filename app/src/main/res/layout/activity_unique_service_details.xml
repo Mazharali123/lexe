@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UniqueServiceDetailsActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_bg"
+        android:contentDescription="Back"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/heartButton"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="Back"
+        android:scaleType="centerCrop"
+        android:src="@drawable/outline_share_24"
+        app:layout_constraintBottom_toBottomOf="@id/backButton"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="Back"
+        android:scaleType="centerCrop"
+        android:src="@drawable/outline_share_24"
+        app:layout_constraintBottom_toBottomOf="@id/backButton"
+        app:layout_constraintStart_toEndOf="@id/heartButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/parlourOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="32dp"
+        android:text="Johana D."
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton" />
+
+    <TextView
+        android:id="@+id/skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:text="Make up artist"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@id/parlourOwnerName"
+        app:layout_constraintTop_toBottomOf="@id/parlourOwnerName" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#F8F5F5"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintStart_toStartOf="@id/skill"
+        app:layout_constraintTop_toBottomOf="@id/skill">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/tikIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/checked"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:text="Verified \nProfessional"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tikIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/ownerImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        android:layout_width="180dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toEndOf="@id/parlourOwnerName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="#F8F6F6"
+        app:cardCornerRadius="32dp"
+        android:elevation="8dp"
+        android:layout_marginTop="-18dp"
+        app:layout_constraintTop_toBottomOf="@id/ownerImage"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="12dp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:id="@+id/serviceCard"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FBC02D"
+                app:cardCornerRadius="52dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/serviceCardlAYOUT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/makeUpBrush"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/makeup_brushes"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="14dp"
+                        android:text="Services"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/makeUpBrush"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/rattingIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toEndOf="@id/serviceCard"
+                android:src="@drawable/star_"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/rattingIcon"
+                app:layout_constraintStart_toEndOf="@id/rattingIcon"
+                android:id="@+id/rattingValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="0dp"
+                android:text="4.5"
+                android:textSize="22dp"
+ />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/serviceItems"
+                android:layout_width="match_parent"
+                android:layout_height="345dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/serviceCard"
+                app:layout_constraintVertical_bias="0.0"
+                tools:listitem="@layout/serviceitemlist" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

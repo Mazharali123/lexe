@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/location"
+        android:icon="@drawable/location"
+        android:title="Near by"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/appointment"
+        android:icon="@drawable/calender"
+        android:title="Appointment"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/user_profile"
+        android:title="Profile"
+        app:showAsAction="always"/>
+</menu>
